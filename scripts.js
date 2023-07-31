@@ -7,14 +7,13 @@ const number = document.querySelector ('[data-key="number"]')
 const subtract =document.querySelector ('[data-key="subtract"]')
 const add =document.querySelector ('[data-key="add"]')
 
-//second 
+//Say this second
 const subtractHandler =() => {
     newValue=parseInt(number.value)-STEP_AMOUNT //changing string to a number
-    number.value=newValue //first code
+    number.value=newValue 
 
     if (add.disabled ===true ){
         add.disabled=false
-
     }
 
     if (newValue <= MIN_NUMBER) {
@@ -36,6 +35,6 @@ const addHandler =() =>{
     }
 }
 
-// get this first 
+// say this first 
 subtract.addEventListener('click',subtractHandler)
 add.addEventListener('click',addHandler)
